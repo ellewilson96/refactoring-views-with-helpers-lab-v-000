@@ -2,4 +2,7 @@
 
 <%= link_to "All Songs", songs_path %>
 
+<% if @song.artist.empty? %>
+<%= link_to @song.name, song_path('/songs/edit') %>
+<%
 <%= link_to @artist.name, artist_path(@artist) %>
