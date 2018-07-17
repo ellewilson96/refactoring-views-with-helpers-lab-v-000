@@ -5,5 +5,5 @@
 <% if @song.artist.empty? %>
 <%= link_to @song.name, song_path('/songs/edit') %>
 <% else %>
-<%= link_to @artist.name, artist_path(@artist) %>
+<%= link_to @song.artist_name, artist_path(@artist) %>
 <% end %>
